@@ -1,0 +1,63 @@
+{
+    "eula": "",
+    "vendor": "Girish Lakhani",
+    "license": "",
+    "id": "CW_ExportToPDF",
+    "icon": "",
+    "version": "1.0.0",
+    "name": "CW Export Table to PDF with Images",
+    "newInstancePrefix": "CW_Export_To_PDF",
+    "description": "CW - Export Table to PDF with Images",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "cw-export-to-pdf",
+            "url": "/export_to_PDF.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "dimensionFeed": {
+            "type": "string[]",
+            "default": []
+        },
+        "measureFeed": {
+            "type": "string[]",
+            "default": []
+        }
+    },
+    "dataBindings": {
+        "myDataBinding": {
+            "feeds": [
+                {
+                    "id": "dimensions",
+                    "description": "Dimensions",
+                    "type": "dimension"
+                },
+                {
+                    "id": "measures",
+                    "description": "Measures",
+                    "type": "mainStructureMember"
+                }
+            ]
+        }
+    },
+    "methods": {
+        "exportToPDF":{
+            "parameters": [
+                {
+                    "name": "columns_per_page",
+                    "description":"how many columns in one page",
+                    "type": "any"
+                },
+                {
+                    "name": "rows_per_page",
+                    "description":"how many rows in one page",
+                    "type": "any"
+                }
+            ]
+        }
+    },
+    "events": {}
+}

@@ -11,7 +11,7 @@ var load_libs_flag = false;
   prepared.innerHTML = `
           <style type="text/css"></style>
           <script src= "https://code.jquery.com/jquery-3.7.1.min.js"></script>
-          <div id="root"></div>
+          <div id="root"><button type="button" id="myBtn">Download PDF</button></div>
         `;
 
   class CustomExport extends HTMLElement {
@@ -27,6 +27,8 @@ var load_libs_flag = false;
             this.loadLibraries();
             load_libs_flag = true;
         }
+      
+        this.init();
     }
 
     async loadLibraries() {
@@ -59,6 +61,10 @@ var load_libs_flag = false;
     //       img.src = url;
     //     });
     // }
+
+    init() {            
+            console.log('init fired');        
+    }
 
     onCustomWidgetBeforeUpdate(changedProperties) { 
         this._props = { ...this._props, ...changedProperties }

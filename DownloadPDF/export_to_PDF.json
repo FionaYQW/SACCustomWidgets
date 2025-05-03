@@ -1,13 +1,13 @@
 {
     "eula": "",
-    "vendor": "Girish Lakhani",
+    "vendor": "Test user",
     "license": "",
     "id": "CW_ExportToPDF_Test",
     "icon": "",
     "version": "1.0.0",
-    "name": "CW Export Table to PDF with Images",
+    "name": "CW PDF Download Test",
     "newInstancePrefix": "CW_ExportToPDF_Test",
-    "description": "CW - Export Table to PDF with Images",
+    "description": "CW - PDF Download Test",
     "webcomponents": [
         {
             "kind": "main",

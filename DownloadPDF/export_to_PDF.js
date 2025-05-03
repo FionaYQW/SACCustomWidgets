@@ -217,7 +217,7 @@ var load_libs_flag = false;
                 ],
                 images: {
                     logo: {
-                      url: 'https://digital-sweep.eu10.hcs.cloud.sap/sap/fpa/services/rest/epm/security/photo/284802604DBC67181900600A893CF11F?tenant=B&',
+                      url: 'https://logodix.com/logo/1780400.png',
                     }
                 },
             };

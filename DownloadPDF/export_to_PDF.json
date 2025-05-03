@@ -12,7 +12,7 @@
         {
             "kind": "main",
             "tag": "cw-export-to-pdf",
-            "url": "/export_to_PDF.js",
+            "url": "https://github.com/FionaYQW/SACCustomWidgets/blob/main/DownloadPDF/export_to_PDF.js",
             "integrity": "",
             "ignoreIntegrity": true
         }
